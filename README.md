@@ -220,7 +220,5 @@ In that case, try the following steps to fix it:
 ## License
 RevonsOs's source code is licensed under the MIT License. See the [LICENSE-MIT](LICENSE-MIT) file for more. 
 
-
-## Contributing
-
-PRs and issues are welcome from anyone; because Theseus is an experimental OS, certain features may be deprioritized or excluded from the main branch. Don't hesitate to ask or mention something though! :smile:
+THANKS TO FAYSSAL CHOKRI 
+           BY REVONS TEAM
