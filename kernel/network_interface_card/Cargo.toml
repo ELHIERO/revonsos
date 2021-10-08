@@ -1,0 +1,14 @@
+[package]
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+name = "network_interface_card"
+description = "A set of abstractions for a Network Interface Card"
+version = "0.1.0"
+build = "../../build.rs"
+
+[dependencies]
+
+[dependencies.nic_buffers]
+path = "../nic_buffers"
+
+[lib]
+crate-type = ["rlib"]

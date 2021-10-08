@@ -1,0 +1,12 @@
+[package]
+name = "font"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+description = "define and initialize the bitmaps of ASCII characters"
+build = "../../build.rs"
+
+[dependencies]
+spin = "0.9.0"
+
+[lib]
+crate-type = ["rlib"]

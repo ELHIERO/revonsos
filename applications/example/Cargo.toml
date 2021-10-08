@@ -1,0 +1,12 @@
+[package]
+name = "example"
+version = "0.1.0"
+description = "An example application that shows how to write a basic application for revonsos."
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+build = "../../build.rs"
+
+[dependencies]
+getopts = "0.2.21"
+
+[dependencies.terminal_print]
+path = "../../kernel/terminal_print"

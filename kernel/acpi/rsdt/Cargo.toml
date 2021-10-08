@@ -1,0 +1,17 @@
+[package]
+name = "rsdt"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+description = "Support for ACPI RSDT and XSDT"
+build = "../../../build.rs"
+
+
+[dependencies.memory]
+path = "../../memory"
+
+[dependencies.sdt]
+path = "../sdt"
+
+[dependencies.acpi_table]
+path = "../acpi_table"
+

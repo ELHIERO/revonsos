@@ -1,0 +1,9 @@
+[package]
+name = "color"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me", "RevonsCommunity <contact.revons.co@support.co>"]
+description = "A simple representation of the standard RGB color model"
+build = "../../build.rs"
+
+[lib]
+crate-type = ["rlib"]

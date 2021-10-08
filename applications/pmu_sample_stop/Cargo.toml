@@ -1,0 +1,15 @@
+[package]
+name = "pmu_sample_stop"
+version = "0.1.0"
+description = "A basic application that starts sampling and retrieves samples."
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+build = "../../build.rs"
+
+[dependencies]
+getopts = "0.2.21"
+
+[dependencies.pmu_x86]
+path = "../../kernel/pmu_x86"
+
+[dependencies.print]
+path = "../../kernel/print"

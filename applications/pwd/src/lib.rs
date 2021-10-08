@@ -1,0 +1,23 @@
+// OFFICIAL REVONS OS REPO / REVONS OS
+// revons company: contact.revons.co@support.co,
+// fayssal chokri : contact.fayssal.revons@revons.co or
+                //  contact.fayssal.chokri@developer.me
+#![no_std]
+#[macro_use] extern crate terminal_print;
+
+extern crate alloc;
+extern crate task;
+extern crate getopts;
+
+use alloc::vec::Vec;
+use alloc::string::String;
+
+pub fn main(_args: Vec<String>) -> isize {
+    if let Some(taskref) = task::get_my_current_task() {
+        let curr_env = taskref.get_env();
+        println!("{} \n", curr_env.lock().get_wd_path());
+    } else {
+        println!("failed to get task ref");    
+    }
+    0
+}

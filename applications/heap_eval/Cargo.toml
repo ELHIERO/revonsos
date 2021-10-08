@@ -1,0 +1,39 @@
+[package]
+name = "heap_eval"
+version = "0.1.0"
+description = "Benchmarks to evaluate revonsos's heap design"
+authors = ["revonscommunity <contact.revons.co@support.com>"]
+build = "../../build.rs"
+
+[dependencies]
+qp-trie = "0.7.3"
+getopts = "0.2.21"
+
+[dependencies.terminal_print]
+path = "../../kernel/terminal_print"
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.hpet]
+path = "../../kernel/acpi/hpet"
+
+[dependencies.apic]
+path = "../../kernel/apic"
+
+[dependencies.runqueue]
+path = "../../kernel/runqueue"
+
+[dependencies.hashbrown]
+version = "0.1.8"
+features = ["nightly"]
+
+[dependencies.libtest]
+path = "../../kernel/libtest"
+
+[dependencies.spawn]
+path = "../../kernel/spawn"
+
+[dependencies.heap]
+path = "../../kernel/heap"
+

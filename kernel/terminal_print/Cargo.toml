@@ -1,0 +1,28 @@
+[package]
+name = "terminal_print"
+version = "0.1.0"
+authors = ["Faysal Chokri <contact.fayssal.chokri@developer.me>"]
+description = "Offers applications the ability to print to the terminal via the print! and println! macros"
+build = "../../build.rs"
+
+
+[dependencies]
+spin = "0.9.0"
+x86_64 = { path = "../../libs/x86_64" }
+
+[dependencies.dfqueue]
+path = "../../libs/dfqueue"
+
+[dependencies.task]
+path = "../../kernel/task"
+
+[dependencies.logger]
+path = "../../kernel/logger"
+
+
+[dependencies.lazy_static]
+features = ["spin_no_std", "nightly"]
+version = "1.2.0"
+
+[dependencies.event_types]
+path = "../../kernel/event_types"

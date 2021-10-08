@@ -1,0 +1,35 @@
+[package]
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>", "RevonsDevelopers <revonsdevelopers@revons.co>"]
+name = "nic_initialization"
+description = "A set of functions used to initialize a Network Interface Card"
+version = "0.1.0"
+build = "../../build.rs"
+
+[dependencies]
+owning_ref = { git = "https://github.com/revonscommunity/revonsos" }
+volatile = "0.2.7"
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.memory]
+path = "../memory"
+
+[dependencies.mpmc]
+path = "../../libs/mpmc"
+
+[dependencies.pci]
+path = "../pci"
+
+[dependencies.intel_ethernet]
+path = "../intel_ethernet"
+
+[dependencies.nic_buffers]
+path = "../nic_buffers"
+
+[dependencies.nic_queues]
+path = "../nic_queues"
+
+
+[lib]
+crate-type = ["rlib"]

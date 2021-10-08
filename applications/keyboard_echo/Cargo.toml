@@ -1,0 +1,23 @@
+[package]
+name = "keyboard_echo"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+build = "../../build.rs"
+
+[dependencies]
+bare-io = { version = "0.2.1", features = [ "alloc" ] }
+
+[dependencies.scheduler]
+path = "../../kernel/scheduler"
+
+[dependencies.app_io]
+path = "../app_io"
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.keycodes_ascii]
+path = "../../libs/keycodes_ascii"
+
+[lib]
+crate-type = ["rlib"]

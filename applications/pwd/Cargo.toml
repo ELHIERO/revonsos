@@ -1,0 +1,16 @@
+[package]
+name = "pwd"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+
+[dependencies]
+getopts = "0.2.21"
+
+[dependencies.terminal_print]
+path = "../../kernel/terminal_print"
+
+[dependencies.task]
+path = "../../kernel/task"
+
+# [dependencies.application_main_fn]
+# path = "../../compiler_plugins"

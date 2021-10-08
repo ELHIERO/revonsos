@@ -1,0 +1,10 @@
+[package]
+name = "application_main_fn"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+
+[dependencies]
+
+[lib]
+crate-type = [ "dylib" ]
+path = "application_main_fn.rs"

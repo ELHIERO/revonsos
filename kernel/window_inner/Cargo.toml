@@ -1,0 +1,22 @@
+[package]
+name = "window_inner"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+description = "allocate new windows and manage a list of existing windows"
+build = "../../build.rs"
+
+
+[dependencies.mpmc]
+path = "../../libs/mpmc"
+
+[dependencies.framebuffer]
+path = "../framebuffer"
+
+[dependencies.shapes]
+path = "../shapes"
+
+[dependencies.event_types]
+path = "../event_types"
+
+[lib]
+crate-type = ["rlib"]

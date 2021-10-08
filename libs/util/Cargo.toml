@@ -1,0 +1,8 @@
+[package]
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+name = "util"
+description = "Random utility libraries used in RevonsOs."
+version = "0.1.0"
+
+[lib]
+crate-type = ["rlib"]

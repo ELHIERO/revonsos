@@ -1,0 +1,11 @@
+[package]
+name = "port_io"
+version = "0.2.1"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>", "Kayla Carlson <kayla@harv.edu.in>"]
+
+description = "Bare metal (no_std) inb, outb, inw, outw, inl, outw instructions with Rust-like API"
+homepage = "https://github.com/revonscommunity"
+repository = "https://github.com/emk/revonscommunity"
+readme = "README.md"
+keywords = ["no_std", "kernel", "io"]
+license = "MIT"

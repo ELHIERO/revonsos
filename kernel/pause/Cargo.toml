@@ -1,0 +1,7 @@
+[package]
+name = "pause"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+description = "Exposes the x86 'pause' instruction that rustc used before March 15, 2021"
+build = "../../build.rs"
+

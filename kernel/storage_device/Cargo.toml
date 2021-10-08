@@ -1,0 +1,24 @@
+[package]
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+name = "storage_device"
+description = "Traits for storage devices and storage controllers"
+version = "0.1.0"
+build = "../../build.rs"
+
+[dependencies]
+spin = "0.9.0"
+owning_ref = { git = "https://github.com/revonscommunity/revonsos" }
+downcast-rs = { version = "1.2.0", default-features = false }
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.lazy_static]
+features = ["spin_no_std", "nightly"]
+version = "1.2.0"
+
+[dependencies.io]
+path = "../io"
+
+[lib]
+crate-type = ["rlib"]

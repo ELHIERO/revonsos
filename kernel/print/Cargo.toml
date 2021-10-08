@@ -1,0 +1,20 @@
+[package]
+name = "print"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+description = "offers kernel crates the ability to print to the default terminal"
+build = "../../build.rs"
+
+[dependencies]
+spin = "0.9.0"
+
+
+[dependencies.dfqueue]
+path = "../../libs/dfqueue"
+
+[dependencies.event_types]
+path = "../event_types"
+
+
+[dependencies.log]
+version = "0.4.8"

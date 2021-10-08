@@ -1,0 +1,32 @@
+[package]
+name = "deps"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+description = "Allows a developer to explore dependencies in revonsos's crate management"
+build = "../../build.rs"
+
+[dependencies]
+getopts = "0.2.21"
+spin = "0.9.0"
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.itertools]
+version = "0.8.0"
+default-features = false
+
+[dependencies.terminal_print]
+path = "../../kernel/terminal_print"
+
+[dependencies.crate_name_utils]
+path = "../../kernel/crate_name_utils"
+
+[dependencies.mod_mgmt]
+path = "../../kernel/mod_mgmt"
+
+[dependencies.memory]
+path = "../../kernel/memory"
+
+[dependencies.task]
+path = "../../kernel/task"

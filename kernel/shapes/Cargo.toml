@@ -1,0 +1,11 @@
+[package]
+name = "shapes"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+description = "define the basic shapes used in display subsystem"
+build = "../../build.rs"
+
+[dependencies]
+
+[lib]
+crate-type = ["rlib"]

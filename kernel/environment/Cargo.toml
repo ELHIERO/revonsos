@@ -1,0 +1,12 @@
+[package]
+name = "environment"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+
+[dependencies]
+
+[dependencies.fs_node]
+path = "../fs_node"
+
+[dependencies.root]
+path = "../root"

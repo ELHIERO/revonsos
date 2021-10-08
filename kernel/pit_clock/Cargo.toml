@@ -1,0 +1,19 @@
+[package]
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+name = "pit_clock"
+description = "PIT (Programmable Interval Timer) support for RevonsOs, x86_arm64 only."
+version = "0.1.0"
+build = "../../build.rs"
+
+[dependencies]
+spin = "0.9.0"
+x86_64 = { path = "../../libs/x86_64" } # currently using our local copy, forked from Phil Opp's crate
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.port_io]
+path = "../../libs/port_io"
+
+[lib]
+crate-type = ["rlib"]

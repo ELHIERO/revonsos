@@ -1,0 +1,30 @@
+[package]
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+name = "storage_manager"
+description = "A crate for managing storage devices/drives"
+version = "0.1.0"
+build = "../../build.rs"
+
+[dependencies]
+spin = "0.9.0"
+owning_ref = { git = "https://github.com/revonscommunity/revonsos" }
+
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.lazy_static]
+features = ["spin_no_std", "nightly"]
+version = "1.2.0"
+
+[dependencies.storage_device]
+path = "../storage_device"
+
+[dependencies.pci]
+path = "../pci"
+
+[dependencies.ata]
+path = "../ata"
+
+[lib]
+crate-type = ["rlib"]

@@ -1,0 +1,22 @@
+[package]
+name = "nic_buffers"
+description = "Structs for network transmit and receive buffers"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+build = "../../build.rs"
+
+[dependencies]
+owning_ref = { git = "https://github.com/revonscommunity/revonsos"}
+
+[dependencies.memory]
+path = "../memory"
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.mpmc]
+path = "../../libs/mpmc"
+
+
+[lib]
+crate-type = ["rlib"]

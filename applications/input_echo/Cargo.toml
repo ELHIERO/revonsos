@@ -1,0 +1,17 @@
+[package]
+name = "input_echo"
+version = "0.1.0"
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+build = "../../build.rs"
+
+[dependencies]
+bare-io = { version = "0.2.1", features = [ "alloc" ] }
+
+[dependencies.app_io]
+path = "../app_io"
+
+[dependencies.log]
+version = "0.4.8"
+
+[lib]
+crate-type = ["rlib"]

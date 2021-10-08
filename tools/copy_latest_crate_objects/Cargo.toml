@@ -1,0 +1,11 @@
+[package]
+name = "copy_latest_crate_objects"
+version = "0.1.0"
+authors = [
+    "Fayssal Chokri <contact.fayssal.chokri@developer.me>",
+]
+description = "Copies the latest object file for each first-party RevonsOs crate into the OS image"
+
+[dependencies]
+getopts = "0.2"
+walkdir = "2.2.7"

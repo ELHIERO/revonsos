@@ -1,0 +1,76 @@
+[package]
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+name = "device_manager"
+description = "Code for handling the sequence required to manage and initialize each driver"
+version = "0.1.0"
+build = "../../build.rs"
+
+[dependencies]
+spin = "0.9.0"
+bare-io = { version = "0.2.1", features = [ "alloc" ] }
+derive_more = "0.99.0"
+
+[dependencies.fatfs]
+git = "https://github.com/revonscommunity/revonsos"
+default-features = false
+features = [ "alloc", "lfn", "unicode", "log_level_warn" ]
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.mpmc]
+path = "../../libs/mpmc"
+
+[dependencies.event_types]
+path = "../event_types"
+
+[dependencies.memory]
+path = "../memory"
+
+[dependencies.apic]
+path = "../apic"
+
+[dependencies.serial_port]
+path = "../serial_port"
+
+[dependencies.logger]
+path = "../logger"
+
+[dependencies.e1000]
+path = "../e1000"
+
+[dependencies.acpi]
+path = "../acpi"
+
+[dependencies.pci]
+path = "../pci"
+
+[dependencies.keyboard]
+path = "../keyboard"
+
+[dependencies.mouse]
+path = "../mouse"
+
+[dependencies.storage_manager]
+path = "../storage_manager"
+
+[dependencies.network_manager]
+path = "../network_manager"
+
+[dependencies.ethernet_smoltcp_device]
+path = "../ethernet_smoltcp_device"
+
+[dependencies.ixgbe]
+path = "../ixgbe"
+
+[dependencies.io]
+path = "../io"
+
+[dependencies.mlx5]
+path = "../mlx5"
+
+[dependencies.iommu]
+path = "../iommu"
+
+[lib]
+crate-type = ["rlib"]

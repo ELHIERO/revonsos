@@ -1,0 +1,34 @@
+[package]
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+name = "rendezvous"
+description = "Synchronous Inter-Task Communication using a rendezvous approach"
+version = "0.1.0"
+build = "../../build.rs"
+
+[dependencies]
+spin = "0.9.0"
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.debugit]
+path = "../../libs/debugit"
+
+[dependencies.irq_safety]
+git = "https://github.com/revonscommunity/revonsos"
+
+[dependencies.task]
+path = "../task"
+
+[dependencies.scheduler]
+path = "../scheduler"
+
+[dependencies.wait_queue]
+path = "../wait_queue"
+
+[dependencies.hpet]
+path = "../acpi/hpet"
+
+
+[lib]
+crate-type = ["rlib"]

@@ -1,0 +1,23 @@
+[package]
+authors = ["Fayssal Chokri <contact.fayssal.chokri@developer.me>"]
+name = "pci"
+description = "Basic PCI support for RevonsOs, x86 only."
+version = "0.1.0"
+build = "../../build.rs"
+
+[dependencies]
+spin = "0.9.0"
+bit_field = "0.7.0"
+
+[dependencies.log]
+version = "0.4.8"
+
+[dependencies.port_io]
+path = "../../libs/port_io"
+
+[dependencies.memory]
+path = "../memory"
+
+
+[lib]
+crate-type = ["rlib"]
